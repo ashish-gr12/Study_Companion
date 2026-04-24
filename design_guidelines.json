@@ -1,0 +1,124 @@
+{
+  "theme": "light",
+  "archetype": "Hybrid (Swiss & High-Contrast + Dark Teal / Deepwork Aesthetic)",
+  "typography": {
+    "fonts": {
+      "headings": "Outfit",
+      "body": "Manrope",
+      "mono": "JetBrains Mono"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-bold",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-semibold",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-slate-500",
+      "overline": "text-xs uppercase tracking-[0.2em] font-semibold text-emerald-600"
+    }
+  },
+  "colors": {
+    "background": {
+      "main": "#F8FAFC",
+      "sidebar": "#0B192C",
+      "card": "#FFFFFF",
+      "hero_card": "#0B192C",
+      "recommendation_card": "#450a0a"
+    },
+    "text": {
+      "primary": "#0f172a",
+      "secondary": "#64748b",
+      "on_dark": "#FFFFFF",
+      "on_dark_secondary": "#94a3b8"
+    },
+    "accent": {
+      "primary": "#10B981",
+      "primary_hover": "#059669",
+      "teal_dark": "#0D9488",
+      "red_dark": "#991b1b"
+    },
+    "border": {
+      "light": "#e2e8f0",
+      "dark": "rgba(255, 255, 255, 0.1)"
+    }
+  },
+  "layout_and_spacing": {
+    "generous_spacing": true,
+    "bento_grid": true,
+    "card_radius": "rounded-2xl",
+    "button_radius": "rounded-full",
+    "chip_radius": "rounded-full",
+    "sidebar_width": "w-64",
+    "content_padding": "p-8 md:p-12",
+    "container_gap": "gap-8"
+  },
+  "components": {
+    "sidebar": {
+      "background": "bg-[#0B192C]",
+      "text": "text-white",
+      "active_item": "bg-[#10B981]/20 text-[#10B981] font-semibold",
+      "hover_item": "hover:bg-white/5 hover:text-white"
+    },
+    "cards": {
+      "default": "bg-white border border-slate-200 shadow-sm rounded-2xl p-6",
+      "hero": "bg-[#0B192C] text-white rounded-3xl p-8 relative overflow-hidden flex flex-col md:flex-row items-center",
+      "recommendation": "bg-[#450a0a] text-white rounded-2xl p-6 relative overflow-hidden",
+      "weekly_goal": "bg-[#0f172a] text-white rounded-2xl p-6"
+    },
+    "buttons": {
+      "primary": "bg-[#10B981] hover:bg-[#059669] text-white rounded-full px-6 py-2 font-medium transition-colors duration-200",
+      "secondary": "bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 rounded-full px-6 py-2 font-medium transition-colors duration-200",
+      "ghost_on_dark": "bg-white/10 hover:bg-white/20 text-white rounded-full px-4 py-2 font-medium transition-colors duration-200"
+    },
+    "chips": {
+      "status_in_progress": "bg-amber-100 text-amber-700 text-xs px-2.5 py-0.5 rounded-full font-semibold",
+      "status_ready": "bg-emerald-100 text-emerald-700 text-xs px-2.5 py-0.5 rounded-full font-semibold",
+      "status_archived": "bg-slate-100 text-slate-700 text-xs px-2.5 py-0.5 rounded-full font-semibold",
+      "day_active": "bg-[#10B981] text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm",
+      "day_inactive": "bg-white/10 text-white/50 w-8 h-8 rounded-full flex items-center justify-center font-medium text-sm"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "soft": "shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)]",
+      "card_hover": "hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.1)] transition-shadow duration-300"
+    },
+    "textures": {
+      "glass": "backdrop-blur-xl bg-white/70 border border-white/20"
+    }
+  },
+  "media": {
+    "images": {
+      "hero_accent": {
+        "url": "https://images.unsplash.com/photo-1764303017897-16f5009d2bb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwxfHxuZW9uJTIwZ2xvd2luZyUyMGdyZWVuJTIwYWJzdHJhY3QlMjBkYXJrfGVufDB8fHx8MTc3NzAzMTk0MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract glowing green geometric shape on dark background, used for the right side of the hero card to simulate the stylized Deepwork accent",
+        "placement": "hero_card_background_right"
+      },
+      "avatar": {
+        "url": "https://images.unsplash.com/photo-1657446969218-499fb1599584?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHN0dWRlbnQlMjBzbWlsaW5nfGVufDB8fHx8MTc3NzAzMTkzMnww&ixlib=rb-4.1.0&q=85",
+        "description": "Smiling student portrait for user profile avatar",
+        "placement": "sidebar_bottom_profile"
+      }
+    },
+    "icons_library": "lucide-react"
+  },
+  "accessibility": {
+    "contrast_strategy": "Ensure dark text on light backgrounds and white text on dark cards (#0B192C, #450a0a). Use APCA compliant contrast. Hover states must increase contrast.",
+    "focus_states": "focus:outline-none focus:ring-2 focus:ring-[#10B981] focus:ring-offset-2",
+    "test_attributes": "All interactive elements must have data-testid in kebab-case."
+  },
+  "instructions_to_main_agent": [
+    "Closely match the DEEPWORK AI Research Partner dashboard aesthetic.",
+    "Use a dark navy/teal sidebar (#0B192C) with the specified navigation items (Dashboard, Library, Analysis, Practice, Help Center).",
+    "The main content area must be a very light gray/off-white (#F8FAFC) to create high contrast with the sidebar.",
+    "All buttons must be pill-shaped (rounded-full) and primary buttons must be Emerald/Teal (#10B981).",
+    "Cards should have generous padding (p-6) and use rounded-2xl.",
+    "The Hero Card 'Expand your mind' must be dark navy, span the top of the content area, and incorporate the abstract neon green image on the right side.",
+    "Action cards ('Upload PDF', 'Paste Notes') should be white with small chip tags.",
+    "The 'Weekly Goal' card must be dark navy with day chips (M T W T F S S), highlighting active days in emerald green.",
+    "The 'Smart Recommendation' card must be dark red (#450a0a) to stand out.",
+    "Use 'Outfit' for headings and 'Manrope' for body text.",
+    "Ensure all components are built using Tailwind CSS, Radix/Shadcn UI (with customized radiuses and spacing).",
+    "Use lucide-react for icons."
+  ]
+}
